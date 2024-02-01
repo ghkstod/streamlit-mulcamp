@@ -88,7 +88,7 @@ def main():
         
     cols=st.multiselect("복수의 컬럼을 선택하세요",iris.columns)
     
-    target=target=iris.loc[iris['species']==val,cols].reset_index(drop=True)
+    target=iris.loc[iris['species']==val,cols].reset_index(drop=True)
     st.dataframe(target)
     
 if __name__ == '__main__':
